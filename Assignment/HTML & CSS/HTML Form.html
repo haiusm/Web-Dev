@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>
+		</title>
+	</head>
+	<body style="margin:100; background-color:aqua">
+		<h1><em>CONTACT US</em></h1>
+		<form method="Post" action="">
+			<fieldset>
+				<legend>Your Details:</legend>
+				<label for="name" name="lblName" id="lblName">Name:</label>
+				<input type="text" name="name" id="name" required>
+				<br><br>
+				<label for="email" name="lblEmail" id="lblEmail">Email:</label>			
+				<input type="email" name="email" id="email" required>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Your Review:</legend>
+				<lable for="find_us">How did you hear about us?</label>&nbsp;&nbsp
+				<select name="find" id="find">
+					<option value="google">Google</option>
+					<option value="facebook">Facebook</option>
+					<option value="twitter">Twitter</option>
+					<option value="newspaper">Newspaper</option>
+					<option value="friend">Friend</option>
+					<option value="tv_ad">TV Ad</option>
+				</select>
+				<br><br>
+				<lable for="visit_again">Would you visit agian?<label>
+				<br>
+				<lable for="isVisitAgain_Yes">Yes<label>
+				<input type="radio" name="isVisitAgain" id="isVisitAgain_Yes" value="Yes">&nbsp;&nbsp
+				<lable for="isVisitAgain_No">No<label>
+				<input type="radio" name="isVisitAgain" id="isVisitAgain_No" value="No">&nbsp;&nbsp
+				<lable for="isVisitAgain_Maybe">Maybe<label>
+				<input type="radio" name="isVisitAgain" id="isVisitAgain_Maybe" value="Maybe">&nbsp;&nbsp
+				<br><br>
+				<lable for="comments">Comments:<label>
+				<br>
+				<textarea name="comments" id="comments" cols=50 rows=15>Please, Type your comments here......</textarea>
+				<br><br>
+				<input type="checkbox" name="chkSignUp" id="chkSignUp">
+				<label for="sign_me_up">Sign me up for email updates</label>
+				<br><br>
+				<button name="submit" id="submit">Submit Review</button>
+				<br>
+			</fieldset>
+		</form>
+	</body>
+</html>

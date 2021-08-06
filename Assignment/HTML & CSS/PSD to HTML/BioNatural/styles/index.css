@@ -1,0 +1,496 @@
+@font-face {
+    font-family: roboto_light;
+    src: url(../fonts/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: robot_bold;
+    src: url(../fonts/roboto/Roboto-Bold.ttf);
+}
+
+*{
+padding: 0;
+margin: 0;
+outline: 0;
+box-sizing: border-box;
+font-size: 16px;
+}
+
+html{
+    font-size: 6.25%;
+}
+
+.div_padding{
+    padding: 0rem 150rem;
+}
+
+body{
+    font-family: roboto_light;
+}
+
+.text_spec_heading{
+    font-size: 48rem;
+    font-weight: bolder;
+    margin: 10rem 0rem;
+}
+
+.text_spec_sub_heading{
+    font-size: 32rem;
+    font-weight: bolder;
+    margin: 15rem 0rem 10rem 0rem;
+}
+
+.text_spec_small_heading{
+    font-size: 24rem;
+    font-weight: bolder;
+    margin: 15rem 0rem 10rem 0rem;
+}
+
+.text_spec_normal{
+    font-size: 18rem;
+    margin: 10rem 0rem;
+    text-align: justify;
+}
+
+.clear_float{
+    clear: both;
+}
+.div_top_bar{
+overflow: auto;
+box-shadow: 1rem 1rem 1rem rgb(199, 198, 198);
+color: black;
+font-family: robot_bold;
+}
+
+/* Top Bar */
+
+.div_top_bar_logo img{
+    margin-left: 10rem;
+    margin-top: 5rem;
+}
+
+.div_top_bar_logo{
+    height: 60rem;
+    float: left;
+}
+
+.div_top_bar_nav{
+    width: fit-content;
+    margin: 0rem auto;
+}
+
+.div_top_bar_nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+.div_top_bar_nav ul{
+list-style-type: none;
+display: inline-flex;
+}
+
+.div_top_bar_nav>ul>li{
+    height: 60rem;
+    line-height: 60rem;
+    width: 120rem;
+    text-align: center;
+}
+
+/* Start Dropdown Menu */
+
+.menu_shop_sub a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu_shop_sub{
+    display: none;
+    text-align: left;
+    width: 200rem;
+    padding-left: 20rem;
+}
+
+.menu_shop:hover .menu_shop_sub{
+    display: block;
+    position: absolute;
+    background-color: green;
+}
+
+.menu_shop:hover .menu_shop_sub>ul{
+    display: block;
+}
+
+.menu_shop:hover .menu_shop_sub>ul>li{
+    background: transparent;
+    border-bottom: 1rem dotted gray;
+}
+
+.menu_shop:hover .menu_shop_sub>ul>li>a:hover{
+    color: yellow;
+}
+
+/* End Dropdown Menu */
+
+.div_top_bar_nav>ul>li:hover{
+    background-color: rgb(231, 231, 231);
+    color: white;
+    cursor: pointer;
+}
+
+.div_top_bar_commands{
+    height: 60rem;
+    line-height: 60rem;
+    float: right;
+    margin-top: -60rem;
+    margin-right: 15rem;
+}
+
+.div_top_bar_commands>ul>li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0rem 10rem;
+}
+
+.div_top_bar_commands>ul>li>a{
+    text-decoration: none;
+}
+
+.div_top_bar_commands>ul>li>a:hover{
+    text-underline-offset: 5rem;
+    text-decoration: underline;
+}
+
+.div_top_bar_commands p{
+    display: inline-block;
+    border-radius: 50%;
+    padding: 2rem 5rem;
+    background-color: red;
+    color: white;
+    font-size: 10rem;
+    position: absolute;
+    right:15rem;
+    top: 15rem;
+    line-height: 1;
+}
+
+ /* Top Banner */
+
+ .div_top_banner{
+    background-image: url(../images/background/top_banner.jpg);
+    background-size: cover;
+    overflow: auto;
+    height: 700rem;
+ }
+
+ .div_top_banner_text{
+    font-size: 32rem;
+    text-shadow: 3rem 3rem 5rem white;
+    margin-left: 60%;
+    margin-top: 5%;
+    font-weight: bolder;
+ }
+
+ .div_top_banner_text >a> button{
+     padding: 15rem 40rem;
+     background: black;
+     color: rgb(218, 218, 19);
+     margin-top: 40rem;
+     border: 0;
+     cursor: pointer;
+     font-size: medium;
+ }
+
+ .div_top_banner_text > a > button:hover{
+background-color: rgb(218, 218, 19);
+color: black;
+font-weight: bold;
+}
+
+ .div_products_whyuse{
+border-bottom: 1rem solid rgb(224, 223, 223);
+padding: 100rem 150rem;
+ }
+
+ .div_products_whyuse_img{
+     width: 40%;
+     float: left;
+ }
+
+ .div_products_whyuse_txt{
+    width: 60%;
+     float: right;
+ }
+
+ .div_products_whyuse_txt > h1{
+    font-size: 48rem;
+    margin: 20rem 0rem;
+    font-weight: bolder;
+}
+
+ .div_products_whyuse_txt > p{
+     font-size: 22rem;
+     text-align: justify;
+     line-height: 1.5;
+     text-indent: 50rem;
+ }
+
+ /* Our Best Sellers */
+ .div_our_best_sell{
+     padding: 0rem 50rem;
+ }
+ .div_our_best_sell_heading{
+     margin: 50rem auto;
+     width: 50%;
+     text-align: center;
+     line-height: 2;
+ }
+
+ .div_our_best_sell_item{
+     width: 21.9%;
+     background-color: rgb(236, 236, 236);
+     padding: 25rem;
+     margin: 25rem;
+     float: left;
+     text-align: center;
+ }
+
+ .div_our_best_sell_item_main{
+     overflow: auto;
+     margin: 0rem auto;
+ }
+
+ .div_our_best_sell_item > button{
+    padding: 15rem 40rem;
+    color: black;
+    background-color: rgb(237, 219, 181);
+    margin-top: 10rem;
+    border: 0;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: medium;
+ }
+
+ .div_our_best_sell_item > button:hover{
+    background-color: black;
+    color: rgb(237, 219, 181)
+ }
+
+/* Our Bundles */
+
+ .div_our_bundles{
+     background-image: url("../images/background/bg_our_bundles_1800_630.jpg");
+     background-size: cover;
+     height: 400rem;
+ }
+
+ .div_our_bundles_text{
+    text-align: center;
+     width: 50%;
+     margin: 0rem auto;
+     line-height: 2;
+     color: white;
+     text-shadow: 2rem 2rem 2rem green;
+     padding: 27rem 0rem;
+     overflow: auto;
+ }
+
+ .div_our_bundles_text > button{
+    padding: 15rem 40rem;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    margin-top: 40rem;
+    border: 1rem solid white;
+    cursor: pointer;
+    font-size: medium;
+ }
+
+ .div_our_bundles_text > button:hover{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+ }
+
+ /* Brand You can Trust */
+
+ .div_brand_trust{
+     background-color: rgb(254, 251, 244);
+ }
+
+ .div_brand_trust_heading{
+     padding: 25rem;
+     width: 50%;
+     margin: 0 auto;
+     text-align: center;
+ }
+
+.div_brand_trust_icon_section{
+    width: 350rem;
+    margin: 70rem auto;
+}
+
+ .div_brand_trust_icon{
+    border-radius: 50%;
+    padding: 25rem;
+    font-size: 48rem;
+    background-color: rgb(237, 219, 181);
+    color: rgb(137,96,6);
+    margin-right: 35rem;
+    height: 50rem;
+    width: 50rem;
+    text-align: center;
+}
+
+.div_brand_trust_img{
+    float: left;
+    padding: 25rem;
+    margin: 0rem 70rem;
+}
+
+.div_brand_trust_content{
+    overflow: auto;
+    width: fit-content;
+    margin: 0rem auto;
+}
+
+/* Our Latest Blog */
+
+.div_blog{
+    padding: 0rem 50rem;
+    margin: 30rem auto;
+}
+
+.div_blog_item{
+    width: 21.9%;
+    background-color: rgb(247, 247, 247);
+    margin: 25rem;
+    float: left;
+    text-align: center;
+    box-shadow: 1rem 1rem 10rem gray;
+}
+
+.div_blog_item_main{
+    overflow: auto;
+    margin: 0rem auto;
+}
+
+.div_blog_item_text{
+    padding: 10rem 20rem;
+}
+
+.div_blog_item_text > button{
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    text-underline-offset: 3rem;
+    font-size: 18rem;
+    color: rgb(183, 106, 0);
+    margin: 20rem 0rem;
+    cursor: pointer;
+    font-size: large;
+}
+
+.div_blog_item_text > button:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* Footer Section */
+.div_footer_links_container{
+    background-color: rgb(27, 27, 27);
+}
+
+.div_footer_links{
+    float: left;
+    width: 20%;
+    padding: 50rem 30rem;
+    color: white;
+    line-height: 1.75;
+}
+
+.div_footer_links > h3{
+font-size: larger;
+font-weight: bolder;
+margin: 10rem 0rem;
+}
+
+.div_footer_links_main{
+    background-color: rgb(27, 27, 27);
+    overflow: auto;
+}
+
+.div_footer_links>ul>li{
+    list-style-type: none;
+}
+
+.div_footer_links>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.div_footer_links>ul>li>a:hover{
+    text-decoration: underline;
+    text-underline-offset: 4rem;
+    text-decoration-color: rgb(219, 219, 219);
+}
+
+.div_footer_copyright{
+    padding: 50rem;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    text-align: center;
+}
+
+.div_footer_copyright>ul>li{
+    display: inline-block;
+    padding: 5rem 20rem;
+    border-left: 1rem solid gainsboro;
+}
+
+
+.div_footer_copyright>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.div_footer_copyright>ul>li>a:hover{
+    text-decoration: underline;
+    text-underline-offset: 4rem;
+    text-decoration-color: rgb(219, 219, 219);
+}
+
+.div_footer_disclaimer{
+    padding: 30rem 150rem;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+.div_footer_disclaimer_follow_us{
+    float: right;
+}
+
+.div_footer_disclaimer_payment_icons{
+    float: left;
+}
+
+.div_footer_disclaimer_payment_icons>img{
+    margin-left: 10rem;
+    margin-bottom: 10rem;
+}
+
+.div_footer_disclaimer_follow_us>i{
+    margin-left: 10rem;
+    background-color: white;
+    padding: 8rem 5rem 2rem 5rem;
+    color: black;
+    border-radius: 50%;
+    width: 30rem;
+    height: 30rem;
+    font-size: 24rem;
+    text-align: center;
+}
+
+.div_footer_disclaimer_follow_us>i:hover{
+cursor: pointer;
+color: yellow;
+background-color: green;
+}

@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "montserrat_bold";
+    src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "montserrat_light";
+    src: url("../fonts/montserrat/Montserrat-Light.ttf");
+}
+
+:root {
+    font-size: 10px;
+
+    --h1_font_size: 3rem;
+    --body_font_size: 1.5rem;
+    --main_div_body_width: 60rem;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom , #0C0737, #2E0D0D);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: var(--body_font_size);
+    color: white;
+    height: 100vh;
+    font-family: montserrat_light;
+}
+
+.container{
+    width: var(--main_div_body_width);
+    /* height: var(--main_div_body_width); */
+    background-image: url("../images/container_bg.png");
+    background-repeat: no-repeat;
+    padding: 3rem;
+    text-align: center;
+    color: #fff;
+    box-shadow: 1px 1px 1px 1px #2f0737;
+}
+
+.container > h1{
+    margin-bottom: 3rem;
+    font-size: var(--h1_font_size);
+    font-family: montserrat_bold;
+}
+
+.div_query_message{
+    background-image: linear-gradient(to right, #EB5F5F, #941616);
+    background-color: #EB5F5F;
+    opacity: 0.75;
+    margin-bottom: 3rem;
+    border: 1px solid #941616;
+    text-align: left;
+    padding: 1rem 3rem;
+}
+
+input{
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    width: 100%;
+    color: white;
+    font-size: var(--body_font_size);
+    margin-bottom: 2rem;
+}
+
+select{
+    padding: 1rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid gray;
+    font-size: var(--body_font_size);
+    margin-bottom: 2rem;
+}
+
+.p_input_err{
+    font-size: 1.5rem;
+    color: red;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+option{
+    color: #000;
+}
+
+#submit_button{
+    padding: 1rem;
+    width: 100%;
+    background-color: transparent;
+    font-size: var(--body_font_size);
+    border: 1px solid gray;
+    color: white;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+#submit_button:hover{
+    background-color: rgba(196, 196, 196,0.5);
+    color: black;
+}
+
+#div_footer{
+    padding: 1rem;
+    background-image: linear-gradient(to right, rgba(235, 95, 95,0.5), rgb(148, 22, 22,0.5));
+    color: white;
+    width: var(--main_div_body_width);
+    text-align:center;
+    font-size:1.5rem;
+}
+
+
+/* Dashboard */
+.div_dashboard_main{
+    text-align: center;
+}
+
+a{
+text-decoration: none;
+cursor:pointer;
+color: yellow;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline;
+}

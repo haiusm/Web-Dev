@@ -1,0 +1,308 @@
+ *{
+   padding: 0;
+   margin: 0;
+ }
+ #divTopSMContacts{
+    clear: both;
+    position: static;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: darkslategray;
+    color: white;
+    overflow: auto;
+  }
+ 
+ #divTopMenu{
+   margin-bottom: 80px;
+ }
+  .TopMenu{
+
+font-weight: bolder;
+color:darkblue;
+  }
+
+  .TopMenu li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 20px;
+  }
+
+  .TopMenu a{
+  text-decoration: none;
+  }
+
+  .TopMenu a:hover{
+    border-bottom: 7px solid orange;
+    text-decoration: none;
+    padding-bottom: 15px;
+  }
+
+#divAdvantages{
+  width: 100%;
+  text-align: center;
+  background-color: whitesmoke;
+  overflow: auto;
+  table-layout: fixed;
+  border-spacing: 30px;
+}
+
+.divAdvantages_Sub{
+text-align: center;
+background-color: rgb(255, 255, 255);
+padding: 20px;
+text-align: justify;
+display: table-cell;
+}
+
+#divStartNewProj{
+  clear: both;
+  position: static;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  background-color: rgb(36, 75, 36);;
+}
+
+#divOurContacts{
+  clear: both;
+  position: static;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  background-color: whitesmoke;
+}
+
+#divOurServices
+{
+  width: 100%;
+  text-align: center;
+  background-color:whitesmoke;
+  overflow: auto;
+  table-layout: fixed;
+  border-spacing: 30px;
+}
+
+.divOurServices_Sub{
+  display: table-cell;
+  text-align: center;
+  background-color: rgb(235, 235, 235);
+  padding: 0px 20px 20px 20px;
+  text-align: justify;
+  }
+
+#divOurPortfolio{
+  padding: 20px;
+  width: 100%;
+  background-color:rgb(51, 51, 51);
+}
+
+.div_our_porfolio_nav{
+width:fit-content;
+margin: 0px auto;
+}
+
+.div_our_porfolio_nav>ul{
+  list-style-type: none;
+  }
+
+.div_our_porfolio_nav>ul>li{
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+.div_our_porfolio_nav>ul>li>a{
+  color:white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.div_our_porfolio_nav>ul>li>a:hover{
+  color:orange;
+  font-weight: bolder;
+}
+
+.div_our_portfolio_img{
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#divAboutUs{
+  padding:20px 60px 40px 60px;
+  clear: both;
+  color: white;
+  font-size: 18px;
+  background-image: url(../images/about_us.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: justify;
+}
+
+.divPrices_main{
+  background-color: skyblue;
+  padding: 30px;
+}
+
+#divPrices{
+overflow: auto;
+margin: 0 auto;
+width: 70%;
+}
+
+.divPrices_Sub{
+padding: 30px;
+border: 1px solid darkgray;
+background-color: white;
+text-align: center;
+line-height: 2;
+float: left;
+width: 32.33%;
+margin-top: 45px;
+transition: 0.5s;
+}
+
+.divPrices_Sub:hover{
+  transform: scaleX(1.1);
+  box-shadow: 1px 1px 1px gray;
+  background-color: beige;
+  margin-top: 20px;
+}
+
+.divPrices_Sub:hover > .divPrices_Sub_child{
+  transform: scaleX(1);
+}
+
+
+#divPeopleAboutUs{
+  width: 100%;
+  padding: 20px 150px 50px 150px;
+  background-color: rgb(209, 209, 209);
+  overflow: auto;
+  }
+
+.divPeopleAboutUs_Sub{
+  padding: 30px;
+  border: 1px solid darkgrey;
+  }
+
+#divOurProcess{
+  width: 100%;
+  padding: 20px;
+  background-color: whitesmoke;
+  overflow: auto;
+  table-layout:fixed;
+  }
+
+.divOurProcess_Sub{
+  position: relative;
+  display: table-cell;
+  text-align:center;
+  padding: 0px 30px 20px 30px;
+  border-top: 2px solid darkgray;
+}
+
+#divOurSkills{
+  width: 100%;
+  padding: 20px;
+  overflow: auto;
+  table-layout: fixed;
+  border-spacing: 30px;
+}
+
+.divOurSkills_Sub{
+float: left;
+  display: table-cell;
+  text-align:center;
+  padding: 30px;
+  width: 25%;
+}
+
+#divFooter{
+  clear: both;
+  position: static;
+  width: 100%;
+  background-color:rgb(36, 75, 36);
+  overflow: auto;
+}
+.divFooter_Sub{
+  float: left;
+  width: 22.8%;
+  height: 230px;
+  border-right: 2px solid gray;
+  padding: 0px 20px 0px 20px;
+  margin: 20px;
+  color: white;
+}
+
+.iconDivHeading{
+  color: blue;
+  text-align: center;
+}
+
+.hDiv{
+  color: blue;
+  font-weight: bolder;
+  text-align: center;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+#iconLarge{
+  text-align: center;
+  font-size: 70px;
+  color:rgb(36, 75, 36);
+  display: inline-block;
+  border-radius: 100%;
+  box-shadow: 0px 0px 2px #888;
+  padding: 15px 35px 20px 35px;
+  background-color: rgb(209, 209, 209);
+}
+
+#iconSmall{
+  text-align: center;
+  font-size: 20px;
+  color:white;
+  display: inline-block;
+  border-radius: 100%;
+  box-shadow: 0px 0px 2px #888;
+  padding: 2px 11px 2px 11px;
+  background-color:orangered;
+  z-index: auto;
+  position: relative;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.button_blue {
+  background-color:darkblue;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid white;
+  margin-top: 20px;
+  margin-bottom: -10px;
+ 
+}
+
+.button:hover{
+  font-weight: bolder;
+  background-color: red;
+  color: white;
+}

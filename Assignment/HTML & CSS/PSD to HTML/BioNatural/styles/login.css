@@ -1,0 +1,42 @@
+body {
+	background: lightskyblue;
+	}
+
+	.div_main{
+		width: fit-content;
+		background-color: red;
+		margin: 0px auto;
+		margin-top: 18%;
+	}
+
+div.heading {
+	background: green;
+	color: white;
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 20px 20px 0px 0px;
+	padding: 25px;
+}
+
+	div.loginform {
+		background: mediumseagreen;
+		border-radius: 0px 0px 20px 20px;
+		padding: 25px;
+		text-align: right;
+		}
+
+input {
+	padding: 10px;
+	width: 380px;
+	margin-bottom: 10px;
+}
+
+button{
+	background: aquamarine;
+	border: 1px solid green;
+	width: 170px;
+	height: 45px;
+	margin-top: 15px;
+}

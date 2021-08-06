@@ -1,0 +1,46 @@
+body {
+	background: lightskyblue;
+	margin-top: 50px;
+	}
+
+div {
+	width: 400px;
+	padding: 20px;
+	border: 1px double gray;
+	margin: 0px auto;
+}
+
+div.heading {
+	background: green;
+	color: white;
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom-width: 0px;
+	border-radius: 20px 20px 0px 0px;
+	}
+
+	div.loginform {
+		background: mediumseagreen;
+		border-radius: 0px 0px 20px 20px;
+		border-top-width: 0px;
+		}
+
+input {
+	padding: 10px;
+	width: 380px;
+	margin-bottom: 10px;
+}
+
+button{
+	background: aquamarine;
+	border: 1px solid green;
+	width: 150px;
+	height: 40px;
+	margin: 0px auto;
+}
+
+span{
+	color: yellow;
+}

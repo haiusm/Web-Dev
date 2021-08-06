@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "poppins_regular";
+    src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "poppins_semibold";
+    src: url("../fonts/poppins/Poppins-SemiBold.ttf");
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background-image: url("../images/page_bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "poppins_regular";
+}
+
+#div_container{
+    position:relative;
+    width: 950px;
+    margin: 100px auto;
+    background-color: white;
+}
+
+.div_container_sub_left{
+    position:absolute;
+    display: inline-block;
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    height: 610px;
+}
+
+.div_container_sub_left > img{
+    width: 100%;
+}
+
+.div_container_sub_right{
+    position:absolute;
+    display: inline-block;
+    width: 50%;
+    height: 610px;
+    padding: 35px 35px 35px 25px;
+    left: 50%;
+    text-align: left;
+    background-color: white;
+}
+
+.div_container_sub_right > h1{
+    font-size: 24px;
+    margin: 25px 8px 25px 0px;
+    font-family: "poppins_semibold";
+    text-align: center;
+}
+
+.div_container_sub_right_form_input{
+line-height: 2;
+padding: 0px 35px 0px 25px;
+}
+
+input, select{
+    /* margin-bottom: 25px; */
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 10px 10px;
+    width: 400px;
+
+}
+
+input[name="firstname"], input[name="lastname"]{
+    width: 193px;
+}
+
+input[type="file"]{
+    border: 0;
+}
+
+.lbl_select_profile_pic{
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.div_container_sub_right  button{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: 1px solid rgb(51, 51, 51);
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.fas{
+    position: relative;
+    margin-left: -30px;
+}
+
+.profile_picture{
+    display: block;
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: gray;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    object-fit: scale-down;
+}
+
+/* Input type file handling */
+#profile_picture::file-selector-button{
+    display: none;
+}
+
+.input_error{
+    display: inline-block;
+    width: 49%;
+    font-size: 12px;
+    margin: 5px 0px 10px 0px;
+    color: red;
+}
+
+.div_footer{
+    position:fixed;
+    display:block;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(255, 255, 0, 0.5);
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.div_footer > a > button{
+    padding: 5px 10px;
+    border: 0px;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* USER REGISTRATION RECORDS - VIEW */
+
+.user_reg_view_table{
+    border: 1px solid gray;
+}
+
+.user_reg_view_table td, th{
+    padding: 5px 15px;
+    border: 1px solid gray;
+}
+
+#div_container_users{
+    position:relative;
+    width: 80%;
+    margin: 100px auto;
+    background-color: white;
+    padding: 50px;
+}
+
+.div_container_users_sub{
+    position:absolute;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+}
+
+
+/* Index (User Login) */
+
+.div_signup_heading{
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    padding: 10px;
+    margin-top: 60%;
+    text-align: center;
+    font-size: 12px;
+}

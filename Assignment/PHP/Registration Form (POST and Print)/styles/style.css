@@ -1,0 +1,18 @@
+body {
+    background: aquamarine;
+}
+
+button{
+    width: 192px;
+    height: 40px;
+    background-color: tomato;
+    border: thin;
+}
+
+select{
+    width: 190px;
+    padding: 5px;
+}
+input{
+    padding: 5px;
+}

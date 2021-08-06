@@ -1,0 +1,206 @@
+<DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<title>
+			User Registration Form
+		</title>
+		<link rel="stylesheet" href="styles/userreg.css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous" />
+
+	</head>
+
+	<body>
+		<div id="div_container">
+			<img src="images/usericon.png" alt="User Login Icon">
+			<div class="div_form">
+				<h1>User Registration</h1>
+				<form method="POST" action="process/userreg_process.php" enctype="multipart/form-data">
+					<table>
+
+						<tr>
+							<td colspan="2"><input type="email" name="email" placeholder="Email Address"
+									class="full_size" /></td>
+						</tr>
+						<tr>
+							<td colspan="2"><input type="password" name="password" placeholder="Password"
+									class="full_size" /></td>
+						</tr>
+
+						<tr>
+							<td colspan="2"><input type="url" name="web" placeholder="Website" class="full_size" /></td>
+						</tr>
+
+						<tr>
+							<td><input type="text" name="fname" placeholder="First Name" class="half_size" /></td>
+							<td><input type="text" name="lname" placeholder="Last Name" class="half_size" /></td>
+						</tr>
+
+						<tr>
+							<td><input type="text" name="birth_year" placeholder="Year of Birth" class="half_size" />
+							</td>
+							<td><input type="number" name="age" placeholder="Age in Years" class="half_size" /></td>
+						</tr>
+
+
+
+						<tr>
+							<td>
+								<select name="gender" id="gender" class="half_size">
+									<option value="Gender" hidden selected>Gender</option>
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+									<option value="Other">Other</option>
+								</select>
+							</td>
+							<td>
+								<select name="country" id="country" class="half_size">
+									<option value="country" hidden selected>Country</option>
+									<option value="Pakistan">Pakistan</option>
+									<option value="India">India</option>
+									<option value="Iran">Iran</option>
+									<option value="Iraq">Iraq</option>
+									<option value="UAE">UAE</option>
+									<option value="England">England</option>
+									<option value="USA">USA</option>
+									<option value="South Africa">South Africa</option>
+									<option value="Sodan">Sodan</option>
+									<option value="Nepal">Nepal</option>
+									<option value="Bhutan">Bhutan</option>
+									<option value="Egypt">Egypt</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="ph" name="phone" placeholder="Phone Number" class="half_size" /></td>
+							<td><input type="ph" name="mobile" placeholder="Mobile Number" class="half_size" /></td>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+								<strong><p style="color: white;">Marital Status: </p></strong>
+								<label for="married" style="margin-right: 5px; margin-left: 0px;">Married</label>
+								<input type="radio" value="Married" name="marital_status" id="married" required checked>
+								<label for="single" style="margin-right: 5px; margin-left: 15px;">Single</label>
+								<input type="radio" value="Single" name="marital_status" id="single">
+								<label for="divorced" style="margin-right: 5px; margin-left: 15px;">Divorced</label>
+								<input type="radio" value="Divorced" name="marital_status" id="divorced">
+								<label for="widowed" style="margin-right: 5px; margin-left: 15px;">Widowed</label>
+								<input type="radio" value="Widowed" name="marital_status" id="widowed">
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+								<label for="blood_group" style="color: white; font-weight: bold;">Blood Group: </label>
+								<input list="blood_grp" id="blood_group" name="blood_group" class="full_size" placeholder="Blood Group"/>
+								<datalist id="blood_grp">
+									<option value="A+">A+</option>
+									<option value="A-">A-</option>
+									<option value="B+">B+</option>
+									<option value="B-">B-</option>
+									<option value="O+">O+</option>
+									<option value="O-">O-</option>
+									<option value="AB+">AB+</option>
+									<option value="AB-">AB-</option>
+								</datalist>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+								<textarea name="remarks" id="remarks" cols="50" rows="10" placeholder="Remarks"
+									class="full_size" style="resize: none;"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<p style="color:white;"><strong>Chose Profile Picture:</strong></p>
+								<input type="file" name="profile_photo" id="profile_photo" placeholder="Profile Picture" accept="image/*" />
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+								<hr style="margin-bottom: 15px;">
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<label for="appointment_date">Appointment Date</label>
+								<input type="date" name="appointment_date" id="appointment_date" placeholder="Appointment Date"
+									class="half_size" />
+							</td>
+							<td>
+								<label for="appointment_time">Appointment Time</label>
+								<input type="time" name="appointment_time" id="appointment_time" placeholder="Appointment Time"
+									class="half_size" />
+
+							</td>
+
+						</tr>
+
+						<tr>
+							<td>
+								<label for="appointment_month">Appointment Month</label>
+								<input type="month" name="appointment_month" id="appointment_month" placeholder="Appointment Month"
+									class="half_size" />
+							</td>
+							<td>
+								<label for="appointment_week">Appointment Week</label>
+								<input type="week" name="appointment_week" id="appointment_week" placeholder="Appointment Week"
+									class="half_size" />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<hr style="margin-top: 10px; margin-bottom: 10px;">
+							</td>
+						</tr>
+
+
+						<tr>
+							<td colspan="2"><input type="checkbox" name="agreement" id="agreement" required style="margin-right: 15px;"
+									value="Agreed" />
+								<label for="agreement">I agree with the terms and conditions.</label>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" align="right">
+								<button type="reset" value="reset" style="margin-top: 20px;">Reset</button>
+								<button type="submit" value="submit" style="margin-top: 20px;">Submit</button>
+							</td>
+						</tr>
+
+						<tr>
+							<td align="left"><input type="image" name="img_back" src="images/arrow_left.png" /></td>
+							<td align="right"><input type="image" name="img_next" src="images/arrow_right.png" /></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+
+		<footer class="social_footer">
+			<div class="social_footer_left">
+				Copyright &copy 2021, THE COMPANY, All rights reserved
+			</div>
+			<div class="social_footer_right">
+				<ul>
+					<li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li><a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+					<li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
+				</ul>
+			</div>
+		</footer>
+
+
+	</body>
+
+	</html>

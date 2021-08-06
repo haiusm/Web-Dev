@@ -1,0 +1,156 @@
+@font-face {
+  font-family: robot_bold;
+  src: url(../fonts/roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: robot_light;
+  src: url(../fonts/roboto/Roboto-Light.ttf);
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+
+div.icon_left{
+  display: inline-block;
+}
+
+div.main{
+  width: 100%;
+  background-color: rgb(250, 250, 250);
+  height: 65px;
+  box-shadow: 1px 0px 2px gray;
+  position: absolute;
+}
+
+div.icon_left{
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  padding: 24px 20px;
+  cursor: pointer;
+}
+
+div.main_text{
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  left: 40px;
+  padding: 15px 20px;
+  font-family: robot_light;
+}
+
+div.menu{
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  left: calc(50% - 150px);
+}
+
+div>ul {
+  list-style-type: none;
+  font-size: 14px;
+  font-family: robot_bold;
+}
+
+div>ul li{
+display: inline-block;
+padding: 24px 23px;
+cursor: pointer;
+font-weight: bolder;
+}
+
+div>ul li:hover{
+  background: rgb(240, 240, 240);
+  }
+
+  div>ul li:active, .active{
+    padding: 21px 23px;
+    border-bottom: 4px solid blue;
+    color: blue;
+    }
+    
+
+    div.icon_right{
+      position: absolute;
+      display: inline-block;
+      width: 20px;
+      padding: 24px 20px;
+      cursor: pointer;
+      right: 45px;
+    }
+
+    div.icon_login_user{
+      position: absolute;
+      display: inline-block;
+      width: 20px;
+      padding: 19px 20px;
+      cursor: pointer;
+      right: 7px;
+    }
+
+    .heading_lower{
+      font-size: 12px;
+    }
+
+    .heading_upper{
+      font-size: 16px;
+    }
+
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+
+    div.posts{
+    position: relative;
+    background-color: red;
+    top: 100px;
+    }
+
+    div.posts_heading{
+      width: 75%;
+      position: relative;
+      display: block;
+      top: 100px;
+      border: 0.5px solid gray;
+      margin: 0px auto;
+      height: 350px;
+      border-radius: 15px;
+      background-color: lightskyblue;
+
+    }
+
+    div.posts_left{
+      position: relative;
+      display: inline-block;
+      width: 70%;
+      border: 1px solid gray;
+      border-radius: 10px;
+      background-color: lightskyblue;
+      box-sizing: border-box;
+    }
+
+    div.posts_right{
+      position: relative;
+      display: inline-block;
+      width: 30%;
+      border: 1px solid gray;
+      border-radius: 10px;
+      background-color: lightskyblue;
+      box-sizing: border-box;
+    }
+
+    div.posts_sub{
+      top: 150px;
+      position: relative;
+      display: inline-block;
+      width: 70%;
+      margin: 0px auto;
+      background-color: red;
+      margin: 0px auto;
+      left: calc(50% - 35%);
+      box-sizing: border-box;
+    }

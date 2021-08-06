@@ -1,0 +1,101 @@
+@font-face {
+    font-family:form_heading;
+    src: url(../fonts/montserrat/Montserrat-Bold.ttf);
+ }
+
+ @font-face {
+    font-family:form_Desc;
+    src: url(../fonts/montserrat/Montserrat-Light.ttf);
+ }
+
+@font-face {
+    font-family:form_text;
+    src: url(../fonts/montserrat/Montserrat-SemiBold.ttf);
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("../images/background.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+body img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: -60px;
+}
+
+.main{
+    background: #27BF96;
+    width: 600px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding: 50px;
+    border-radius: 10px;   
+    margin-top: -300px;
+    margin-left:-300px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+
+p.title{
+    font-size: 27px;
+    color: white;
+    font-family:form_heading;
+    margin-top: 40px;
+}
+
+p{
+    width: 230px;
+    margin: 10px auto;
+}
+
+p.title_text{
+    font-size: 14px;
+    font-family:form_desc;
+    margin-bottom: 50px;
+}
+
+input, select{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+select{
+    width: 225px;
+}
+
+button{
+    padding: 10px;
+    height: 50px;
+    width: 200px;
+    background: #1AB289;
+    margin: 30px auto;
+    border: 0px;
+    color: white;
+    font-size: 14px;
+    font-family: form_text;
+}
+
+button:hover{
+    background:#227e65;
+}
+
+input[type="email"], input[type="password"]
+{
+   width: 448px;
+}
