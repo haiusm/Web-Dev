@@ -1,0 +1,236 @@
+:root{
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+background-color: white;
+font-size: 1.5rem;
+}
+
+#container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100vw;
+    flex-direction: row;
+    background-color: rgb(240, 242, 245);
+}
+
+.div_text{
+padding: 1rem;
+width: 35rem;
+font-size: 2rem;
+margin-right: 2.5rem;
+}
+
+.div_text > h1{
+    color: rgb(24, 119, 242);
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.div_form{
+    width: 35rem;
+    border: 0.1rem solid gray;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgb(213, 215, 217);
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+}
+
+.div_form > hr{
+    margin: 2rem auto;
+    color: gray;
+}
+
+input{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem auto;
+    border: 0.1rem solid gray;
+}
+
+.btn_login, .btn_new_acc{
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(24, 119, 242);
+    color: white;
+    font-weight: bolder;
+    border: 0.1rem solid gray;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+.btn_new_acc
+{
+    width: 60%;
+    background-color: rgb(66, 183, 42);
+}
+
+.div_input_err{
+    color: red;
+    text-align: left;
+}
+
+
+/* SIGN UP FORM */
+
+#div_signup{
+    position: absolute;
+    display: none;
+    width:50rem;
+    border: 0.1rem solid gray;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    top: calc(50% - 35rem);
+    left: calc(50% - 25rem);
+    background-color: white;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgb(213, 215, 217);
+}
+
+#div_signup > hr{
+    margin: 1rem auto;
+}
+
+#div_signup > input, select{
+    padding: 1rem;
+}
+
+#div_signup > select{
+    width: 32.7%;
+}
+
+.half_size{
+    width: 49.50%;
+}
+
+.full_size{
+    width: 100%;
+}
+
+#btn_close{
+    position:absolute;
+    right:2rem;
+    top:2rem;
+    display:inline-block;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.user_gender{
+    margin-right: 0.5rem;
+}
+
+.div_signup_radio_wrap{
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0.5rem;
+    border: 0.1rem solid gray;
+    width: 32.7%;
+}
+
+#btn_signup{
+    width: 50%;
+    padding: 1rem;
+    background-color: rgb(66, 183, 42);
+    color: white;
+    font-weight: bolder;
+    border: 0.1rem solid gray;
+    margin: 1rem auto;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.p_fullsize{
+    margin: 1rem auto;
+}
+
+#div_opt_gender_custom{
+    width: 100%;
+    display: none;
+}
+
+button:hover{
+    background-color: gray;
+    color: white;
+    font-weight: bolder;
+}
+
+input[type=button]:hover{
+    background-color: gray;
+    color: white;
+    font-weight: bolder;
+}
+
+/* Dashboard Page */
+ #div_dashboard_main{
+    height: 5rem;
+    line-height: 5rem;
+    border: 0.1rem solid gray;
+    box-shadow: 00.1rem 0.1rem 0.1rem gray;
+    font-size: 2rem;
+ }
+ 
+ #div_dashboard_main > ul{
+     display: block;
+     background-color: green;
+     color: white;
+     list-style-type:none;
+ }
+
+ #div_dashboard_main > ul > li{
+     display: inline-block;
+     padding: 0 1rem;
+ }
+
+ #div_dashboard_main > ul > li:hover{
+    background-color: rgb(0, 99, 0);
+    color: white;
+    cursor: pointer;
+}
+
+#div_dashboard_main_sub_menu {
+    display: none;
+    background-color: green;
+    color: white;
+    width: 21rem;
+    margin-left: -1rem;
+}
+
+#div_dashboard_main_sub_menu ul > li > a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 2rem;
+   }
+
+#div_dashboard_main > ul > li:hover  #div_dashboard_main_sub_menu{
+    display: block;
+    position: absolute;
+}
+
+#div_error{
+    display: none;
+    width: 50%;
+    position:absolute;
+    background:yellow;
+    border: 0.1rem solid orange;
+    box-shadow: 0.1rem 0.1rem 0.1rem yellow;
+    left: 25%;
+    top: 1rem;
+    font-size: 2rem;
+    padding: 0.4rem 0.5rem 0.5rem 0.5rem;
+}
+
+
+ 
+

@@ -15,6 +15,7 @@ if(isset($_SESSION['is_logged_in'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Signup</title>
 
 
@@ -181,6 +182,9 @@ function get_year_value() {
 </script>
 
                 <?php
+
+                dob_year=$_POST();
+                           }
                     // $days_in_selected_month=cal_days_in_month(CAL_GREGORIAN,"<script> document.getElementsByName("user_dob_year")[0].value;;</script>","<script>get_year_value();</script>");
                     $days_in_selected_month=31;
 ?>
@@ -248,6 +252,27 @@ function get_year_value() {
 <div id="div_footer">           
             <p>Existing User? &nbsp;&nbsp;<a href="signin.php">Signin Here!</a></p>
 </div>
+
+<script>
+$(documennt).ready(function(){
+var user_dob_year= $(input[name="user_dob_year"]).val();
+var user_dob_month=$(input[name="user_dob_year"]).val();
+var user_dob_day=$(input[name="user_dob_year"]).val();
+
+var user_dob={
+    dob_year=user_dbo_year,
+    dob_year=user_dbo_month,
+    dob_year=user_dbo_year,
+}
+
+$.post("signup.php", user_dob, function(){
+alert("Data Posted");
+})
+
+
+</script>
+
+
 </body>
 
 </html>
